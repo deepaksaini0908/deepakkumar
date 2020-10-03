@@ -1,0 +1,68 @@
+<html>
+<head>
+
+</head>
+<SCRIPT language="javascript">
+function cal()
+{
+var n=form1.select2.selectedIndex
+if(n==0)
+form1.txt.value=parseInt(form1.select.value)+parseInt(form1.select3.value)
+if(n==1)
+form1.txt.value=parseInt(form1.select1.value)*parseInt(form1.select3.value)
+if(n==2)
+form1.txt.value=parseInt(form1.select1.value)-parseInt(form1.select3.value)
+if(n==3)
+form1.txt.value=parseInt(form1.select1.value)/parseInt(form1.select3.value)
+if(n==-1)
+ alert("Please select required operator")
+}
+</script>
+<body>
+<center>
+<br><br>
+<h1>calcy</h1>
+<br><br><br><br>
+<form name="form1">
+op1
+<select name="select1" size="10">
+<option value="0">0
+<option value="1">1
+<option value="2">2
+<option value="4">4
+<option value="5">5
+<option value="6">6
+<option value="3">3
+<option value="7">7
+<option value="8">8
+<option value="9">9
+</select>
+&nbsp&nbsp&nbsp
+
+operator
+<select name="select2" size="4">
+<option value="+">+
+<option value="*">*
+<option value="-">-
+<option value="/">/
+</select>
+&nbsp&nbsp&nbsp
+<select name="select3" size="10" onClick="cal()">
+<option value="0">0
+<option value="1">1
+<option value="2">2
+<option value="4">4
+<option value="5">5
+<option value="6">6
+<option value="3">3
+<option value="7">7
+<option value="8">8
+<option value="9">9
+</select>
+<br>
+<br><br>
+output:<input type="text" name="text"><BR><BR>
+<input type=reset value="RESET">
+</FORM>
+</body>
+</html>
